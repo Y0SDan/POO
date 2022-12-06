@@ -1,3 +1,6 @@
+#ifndef LENGUAJEM_H
+#define LENGUAJEM_H
+
 #include "lcomputadora.h"
 #include "LenguajeH.h"
 
@@ -16,3 +19,5 @@ class LenguajeMixto: virtual public Lenguaje_Humano, public Lcomputadora{
 			return cadena;
 		}
 };
+
+#endif

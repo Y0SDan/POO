@@ -1,3 +1,6 @@
+#ifndef LENGUAJEC_H
+#define LENGUAJEC_H
+
 #include <iostream>
 #include "Lenguaje.h"
 using namespace std;
@@ -16,12 +19,8 @@ public:
   Lcomputadora(string,string);
 };
 void Lcomputadora::setIdioma(string i){
-  if(i.empty()){
-    idioma = i;
-  }else{
-    cout << "No se pudo reservar memoria" << endl;
-  }
-};
+    idioma = i; 
+}
 
 Lcomputadora::Lcomputadora(): Lenguaje(){
   setIdioma("binario");
@@ -35,12 +34,10 @@ Lcomputadora::Lcomputadora(string idioma, string simbolo):Lenguaje(simbolo)
   setIdioma(idioma);
 }
 
-void Lcomputadora::setIdioma(string idioma)
-{
-  this->idioma = idioma;
-}
 
 string Lcomputadora::getIdioma()
 {
   return idioma;
 }
+
+#endif

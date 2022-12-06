@@ -1,3 +1,6 @@
+#ifndef LENGUAJEH_H
+#define LENGUAJEH_H
+
 #include <iostream>
 #include "Lenguaje.h"
 using namespace std;
@@ -37,3 +40,5 @@ string Lenguaje_Humano::getIdioma() const
 {
   return idioma;
 }
+
+#endif

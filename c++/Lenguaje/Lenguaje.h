@@ -1,3 +1,6 @@
+#ifndef LENGUAJE_H
+#define LENGUAJE_H
+
 #include <iostream>
 using namespace std;
 
@@ -17,11 +20,7 @@ public:
   friend ostream& operator<<(ostream&, const Lenguaje&);
 };
 void Lenguaje::setSimbolos(string cad){
-    if(cad.empty()){
       simbolos = cad;
-    }else{
-      cout << "No se pudo reservar memoria" << endl;
-    }
 }
 
 string Lenguaje::getSimbolos(){
@@ -44,3 +43,5 @@ ostream& operator<<(ostream& os, const Lenguaje& l){
   os << l.simbolos;
   return os;
 }
+
+#endif

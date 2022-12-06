@@ -6,14 +6,13 @@
 using namespace std;
 
 class Lcomputadora: public Lenguaje{
+
 private:
   string idioma;//define el nombre de este tipo de idioma
 
 public:
   void setIdioma(string i);
-
-  string getIdioma();
-
+  string getIdioma() const;
   Lcomputadora();
   Lcomputadora(string);
   Lcomputadora(string,string);
@@ -35,7 +34,7 @@ Lcomputadora::Lcomputadora(string idioma, string simbolo):Lenguaje(simbolo)
 }
 
 
-string Lcomputadora::getIdioma()
+string Lcomputadora::getIdioma() const
 {
   return idioma;
 }

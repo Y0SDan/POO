@@ -8,9 +8,9 @@ using namespace std;
 int main(){
   LenguajeMixto h("Español", "Pascal", "a", "Cadenita perdida de carmen");//h = humano; h(5);
 
-  cout << "Escribe las vocales del lenguaje humano" << '\n';
+  //cout << "Escribe las vocales del lenguaje humano" << '\n';
 
   
 
-  cout << "Has escrito " << h.getCadenaM() << '\n' << "Fin de la transmicion... " << '\n';
+  cout << "Has escrito " << h << '\n' << "Fin de la transmicion... " << '\n';
 }

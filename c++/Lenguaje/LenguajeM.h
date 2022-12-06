@@ -5,6 +5,7 @@
 #include "LenguajeH.h"
 
 class LenguajeMixto: virtual public Lenguaje_Humano, public Lcomputadora{
+    friend ostream& operator<<(ostream&, const LenguajeMixto&);
 	private:
 		string cadena;
 	public:
@@ -19,5 +20,11 @@ class LenguajeMixto: virtual public Lenguaje_Humano, public Lcomputadora{
 			return cadena;
 		}
 };
+
+ostream& operator<<(ostream& salida, const LenguajeMixto& a)
+{
+  salida << "El lenguaje de computadora actual de computadora es: Print(" << a.Lcomputadora::getIdioma()<< "); La cadena mixta acutal es:" << a.cadena << " El lenguaje Humano acutal es :"<<a.Lenguaje_Humano::getIdioma()<<endl;
+  return salida;
+}
 
 #endif

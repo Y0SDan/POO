@@ -21,11 +21,26 @@ void Lcomputadora::setIdioma(string i){
   }else{
     cout << "No se pudo reservar memoria" << endl;
   }
-}
+};
 
 Lcomputadora::Lcomputadora(): Lenguaje(){
   setIdioma("binario");
 }
-Lcomputadora::Lcomputadora(string i){
+Lcomputadora::Lcomputadora(string i):Lenguaje(){
+  idioma = i;
+}
 
+Lcomputadora::Lcomputadora(string idioma, string simbolo):Lenguaje(simbolo)
+{
+  setIdioma(idioma);
+}
+
+void Lcomputadora::setIdioma(string idioma)
+{
+  this->idioma = idioma;
+}
+
+string Lcomputadora::getIdioma()
+{
+  return idioma;
 }

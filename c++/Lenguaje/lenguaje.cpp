@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include "Lenguaje.h"
+#include "LenguajeM.h"
 using namespace std;
 
 

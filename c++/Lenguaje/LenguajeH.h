@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Lenguaje.h"
 using namespace std;
 
 class Lenguaje_Humano: public Lenguaje

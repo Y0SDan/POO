@@ -1,4 +1,4 @@
-#inlcude <iostream.h>
+#include <iostream>
 using namespace std;
 
 class Lenguaje_Humano: public Lenguaje

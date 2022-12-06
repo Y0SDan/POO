@@ -1,4 +1,8 @@
-class Lcomputadora: public lenguaje{
+#include <iostream>
+#include "Lenguaje.h"
+using namespace std;
+
+class Lcomputadora: public Lenguaje{
 private:
   string idioma;//define el nombre de este tipo de idioma
 
@@ -19,9 +23,9 @@ void Lcomputadora::setIdioma(string i){
   }
 }
 
-void Lcomputadora::Lcomputadora(): lenguaje(){
+Lcomputadora::Lcomputadora(): Lenguaje(){
   setIdioma("binario");
 }
-void Lcomputadora::Lcomputadora(string i){
+Lcomputadora::Lcomputadora(string i){
 
 }
